@@ -8,7 +8,7 @@ WORKDIR /source
 # Copy everything in this project and build app
 COPY . ./dotnetcore-docs-hello-world/
 WORKDIR /source/dotnetcore-docs-hello-world
-RUN dotnet publish -c release -o /app 
+RUN dotnet publish -c release -o \app 
 
 # final stage/image
 # We're using a tag that is explicitly a Windows container
